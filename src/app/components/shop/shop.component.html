@@ -29,9 +29,9 @@
 
 
                             <div class="col-12 col-md-6 col-lg-4 mb-60" *ngFor="let item of Products">
-                                <div class="image position-relative">
+                                <div class="image position-relative cursor-pointer">
                                     <img class="w-100 h-auto" [src]="item.image1" alt="{{item.name}}" (click)="gotoproduct(item.id)">
-                                    <span class="position-absolute top-5 left-5 cursor-pointer gray bg-white px-15 py-5 rounded-pill fs-14 fw-semibold">Sale!</span>
+                                    <span class="position-absolute top-5 left-5  gray bg-white px-15 py-5 rounded-pill fs-14 fw-semibold">Sale!</span>
                                 </div>
                                 <div class="description pt-16 pb-16">
                                     <div class="catogrey opacity-75 mb-8 fs-6 gray">{{item.categoryName}}</div>

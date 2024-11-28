@@ -46,7 +46,11 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "5MB",
+<<<<<<< HEAD
                   "maximumError": "5MB"
+=======
+                  "maximumError": "10MB"
+>>>>>>> gh-pages
                 }
               ],
               "outputHashing": "all"
