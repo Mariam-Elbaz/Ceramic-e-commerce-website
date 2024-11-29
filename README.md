@@ -25,3 +25,47 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Angular Project with JSON Server
+
+This project is an Angular application that uses [JSON Server](https://github.com/typicode/json-server) as a mock backend.
+
+## Data Source: JSON Server
+
+The project uses JSON Server to simulate an API for data storage.
+
+### Setting up JSON Server:
+
+1. **Install JSON Server globally**:
+   To run the JSON Server locally, you need to install it globally using npm:
+   ```bash
+   npm install -g json-server
+   ```
+
+2. **Start JSON Server**:
+   After installing, create a file named `db.json` in the root directory of your project (or use an existing one), and then run:
+   ```bash
+   json-server --watch db.json --port 3000
+   ```
+
+3. **Access the Data**:
+   The data is available at the following URL:
+   ```
+   http://localhost:3000
+   ```
+
+## How to run the Angular app:
+
+1. Install the project dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Serve the Angular application:
+   ```bash
+   ng serve
+   ```
+
+The Angular app will be accessible at `http://localhost:4200`, and it will retrieve data from the JSON Server running on `http://localhost:3000`.
+
